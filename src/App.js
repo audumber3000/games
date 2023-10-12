@@ -1,12 +1,18 @@
-import OptionsComponent from "./GameOne/components/option";
-import QuizComponent from "./GameOne/components/quiz";
 
 
+import WordGame from "./GameTwo/components/Gametwo";
 function App() {
+  const globalStyles = `
+  body {
+    background-color: #6A0DAD;
+    margin: 0;
+    padding: 0;
+  }
+`;
   return (
     <div className="App">
-<QuizComponent/>
-
+     <style>{globalStyles}</style>
+<WordGame/>
     </div>
   );
 }
